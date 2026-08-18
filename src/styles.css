@@ -131,8 +131,17 @@
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 45px 90px -35px oklch(0.2 0.01 250 / 0.4);
+    box-shadow: 0 55px 110px -40px oklch(0 0 0 / 0.95);
   }
+}
+
+@utility mono-photo {
+  filter: grayscale(1) contrast(1.15) brightness(0.95);
+  transition: filter var(--transition-silk), transform var(--transition-silk);
+}
+
+@utility hairline {
+  background: linear-gradient(90deg, transparent, oklch(1 0 0 / 0.28), transparent);
 }
 
 @utility btn-tactile {
