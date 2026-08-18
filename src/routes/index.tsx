@@ -233,14 +233,14 @@ function Index() {
                     }
                   />
                 </div>
-                <div className="flex items-end justify-between gap-6 p-7">
+                <div className="flex flex-col items-start gap-6 p-7 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <h3 className="font-serif text-2xl font-normal tracking-tight">{p.name}</h3>
                     <p className="mt-2 text-sm font-light text-muted-foreground">{p.note}</p>
                   </div>
                   <button
                     type="button"
-                    className="btn-tactile shrink-0 px-6 py-3 text-[0.7rem] font-medium uppercase tracking-[0.18em]"
+                    className="btn-tactile w-full shrink-0 sm:w-auto px-6 py-3 text-[0.7rem] font-medium uppercase tracking-[0.18em]"
                   >
                     Adicionar ao Kit
                   </button>
