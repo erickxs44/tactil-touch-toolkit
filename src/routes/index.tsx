@@ -89,37 +89,20 @@ const PRODUCTS = [
 
 function Index() {
   return (
-    <main className="bg-background">
+    <main className="bg-background text-foreground">
       {/* ── Hero ───────────────────────────────────────────────── */}
       <section className="relative flex min-h-screen flex-col items-center justify-center overflow-hidden bg-onyx px-6">
-        {/* subtle sculpted background layers */}
         <div
           aria-hidden
           className="pointer-events-none absolute inset-0"
           style={{
             background:
-              "radial-gradient(120% 80% at 50% 30%, oklch(0.26 0.002 250) 0%, oklch(0.14 0.002 250) 55%, oklch(0.09 0.002 250) 100%)",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -right-[30%] -top-[40%] h-[140%] w-[110%] rounded-[50%]"
-          style={{
-            background:
-              "linear-gradient(200deg, oklch(0.22 0.002 250 / 0.9), transparent 60%)",
-          }}
-        />
-        <div
-          aria-hidden
-          className="pointer-events-none absolute -bottom-[55%] -left-[35%] h-[130%] w-[120%] rounded-[50%]"
-          style={{
-            background:
-              "linear-gradient(20deg, oklch(0.2 0.002 250 / 0.8), transparent 62%)",
+              "radial-gradient(120% 80% at 50% 25%, oklch(0.26 0 0) 0%, oklch(0.16 0 0) 55%, oklch(0.1 0 0) 100%)",
           }}
         />
 
         <div className="relative z-10 flex flex-col items-center reveal">
-          <p className="eyebrow text-silver/80">Boas-vindas à</p>
+          <p className="eyebrow text-silver/70">Boas-vindas à</p>
 
           <h1 className="text-silver-metal mt-6 font-serif text-[5.5rem] leading-[0.85] font-medium tracking-tight sm:text-[9rem] lg:text-[12rem]">
             Tátil
@@ -138,7 +121,7 @@ function Index() {
 
         <a
           href="#sobre"
-          className="scroll-cue absolute bottom-10 z-10 flex flex-col items-center gap-3 text-silver/70 transition-colors hover:text-silver"
+          className="scroll-cue absolute bottom-10 z-10 flex flex-col items-center gap-3 text-silver/60 transition-colors hover:text-silver"
           aria-label="Rolar para saber mais"
         >
           <span className="eyebrow text-[0.55rem]">Explore</span>
@@ -154,54 +137,52 @@ function Index() {
         </a>
       </section>
 
-      {/* ── Sobre ──────────────────────────────────────────────── */}
-      <section id="sobre" className="bg-background px-6 py-24 sm:py-36">
-        <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-12 lg:gap-24">
-          <figure className="lg:col-span-5">
-            <img
-              src={handsBraille}
-              alt="Detalhe de mãos percorrendo uma página em Braille"
-              width={1024}
-              height={1280}
-              loading="lazy"
-              className="w-full rounded-sm object-cover card-float"
-            />
-            <figcaption className="mt-5 eyebrow text-muted-foreground">
-              Estudo Tátil — nº 01
-            </figcaption>
-          </figure>
+      {/* ── Nova Seção 1 — Essência / Introdução ──────────────── */}
+      <section id="sobre" className="bg-background px-6 py-28 sm:py-40">
+        <div className="mx-auto max-w-6xl">
+          <p className="eyebrow text-muted-foreground">A essência da Tátil</p>
+          <h2 className="mt-8 max-w-4xl font-serif text-[2.75rem] leading-[1.02] font-normal tracking-tight sm:text-7xl lg:text-[5.5rem]">
+            Transformando o toque em possibilidades.
+          </h2>
+          <div className="mt-12 h-px w-full hairline" />
+        </div>
 
-          <div className="lg:col-span-7 lg:pl-6">
-            <p className="eyebrow text-muted-foreground">A essência da Tátil</p>
-            <h2 className="mt-7 max-w-xl font-serif text-4xl leading-[1.05] font-light tracking-tight sm:text-6xl lg:text-7xl">
-              Transformando o toque em possibilidades.
-            </h2>
-            <div className="mt-10 h-px w-24 bg-foreground/20" />
-            <div className="mt-10 max-w-2xl space-y-6 text-[0.98rem] leading-[1.9] font-light text-muted-foreground">
-              <p>
-                A Tátil atua no desenvolvimento de soluções acessíveis voltadas à autonomia,
-                segurança e inclusão de pessoas com deficiência visual. A empresa adapta objetos,
-                informações e recursos do cotidiano por meio de elementos como Braille, relevos e
-                sinalizações táteis, tornando-os mais acessíveis e funcionais.
-              </p>
-              <p>
-                Os produtos são desenvolvidos a partir das necessidades encontradas no dia a dia,
-                buscando facilitar atividades como identificação, orientação, aprendizagem e
-                interação em espaços e situações do cotidiano. Dessa forma, a Tátil oferece soluções
-                práticas e acessíveis que contribuem para uma maior independência e participação das
-                pessoas com deficiência visual.
-              </p>
-            </div>
-          </div>
+        <figure className="mx-auto mt-14 max-w-7xl">
+          <img
+            src={handsBraille}
+            alt="Close-up dramático em preto e branco de mãos lendo uma página em Braille"
+            width={1600}
+            height={900}
+            loading="lazy"
+            className="mono-photo w-full rounded-2xl object-cover aspect-[16/10] sm:aspect-[21/9]"
+          />
+          <figcaption className="mt-5 eyebrow text-muted-foreground">
+            Estudo Tátil — nº 01
+          </figcaption>
+        </figure>
+
+        <div className="mx-auto mt-16 grid max-w-6xl gap-10 text-[0.98rem] leading-[1.95] font-light text-muted-foreground lg:grid-cols-2 lg:gap-20">
+          <p>
+            A Tátil atua no desenvolvimento de soluções acessíveis voltadas à autonomia, segurança e
+            inclusão de pessoas com deficiência visual. A empresa adapta objetos, informações e
+            recursos do cotidiano por meio de elementos como Braille, relevos e sinalizações táteis,
+            tornando-os mais acessíveis e funcionais.
+          </p>
+          <p>
+            Os produtos são desenvolvidos a partir das necessidades encontradas no dia a dia,
+            buscando facilitar atividades como identificação, orientação, aprendizagem e interação
+            em espaços e situações do cotidiano. Dessa forma, a Tátil oferece soluções práticas que
+            contribuem para maior independência e participação.
+          </p>
         </div>
       </section>
 
-      {/* ── Produtos ───────────────────────────────────────────── */}
-      <section id="kit" className="bg-cream px-6 pb-32 pt-10 sm:pb-40">
+      {/* ── Nova Seção 2 — Coleção Sensorial ──────────────────── */}
+      <section id="kit" className="bg-onyx-soft/40 px-6 pb-32 pt-24 sm:pb-40 sm:pt-32">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-2xl">
             <p className="eyebrow text-muted-foreground">Coleção sensorial</p>
-            <h2 className="mt-7 font-serif text-4xl leading-[1.05] font-light tracking-tight sm:text-6xl">
+            <h2 className="mt-7 font-serif text-4xl leading-[1.05] font-normal tracking-tight sm:text-6xl">
               Monte seu kit.
             </h2>
             <p className="mt-6 max-w-lg text-[0.95rem] leading-[1.9] font-light text-muted-foreground">
@@ -215,12 +196,11 @@ function Index() {
               <li
                 key={p.name}
                 className={
-                  "group card-float overflow-hidden rounded-3xl bg-card " +
+                  "group card-float overflow-hidden rounded-3xl bg-card text-card-foreground " +
                   (i === 0 ? "lg:col-span-2" : "")
                 }
-                style={{ boxShadow: "var(--shadow-float)" }}
               >
-                <div className="overflow-hidden bg-secondary/40">
+                <div className="overflow-hidden bg-secondary/10">
                   <img
                     src={p.image}
                     alt={p.name}
@@ -228,7 +208,7 @@ function Index() {
                     height={900}
                     loading="lazy"
                     className={
-                      "w-full object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.04] " +
+                      "mono-photo w-full object-cover group-hover:scale-[1.04] " +
                       (i === 0 ? "aspect-[16/10]" : "aspect-square")
                     }
                   />
@@ -236,7 +216,7 @@ function Index() {
                 <div className="flex flex-col items-start gap-6 p-7 sm:flex-row sm:items-end sm:justify-between">
                   <div>
                     <h3 className="font-serif text-2xl font-normal tracking-tight">{p.name}</h3>
-                    <p className="mt-2 text-sm font-light text-muted-foreground">{p.note}</p>
+                    <p className="mt-2 text-sm font-light text-card-foreground/60">{p.note}</p>
                   </div>
                   <button
                     type="button"
