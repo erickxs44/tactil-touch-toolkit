@@ -1,6 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import aboutTatil from "@/assets/about-tatil.jpg";
 import handsBraille from "@/assets/hands-braille.jpg";
 import pDomino from "@/assets/p-domino.jpg";
 import pBola from "@/assets/p-bola.jpg";
@@ -138,84 +137,6 @@ function Index() {
         </a>
       </section>
 
-      {/* ── Sobre a Tátil ─────────────────────────────────────── */}
-      <section id="a-tatil" className="bg-background px-6 py-28 sm:py-40">
-        <div className="mx-auto max-w-6xl">
-          <p className="eyebrow text-muted-foreground">Sobre a Tátil</p>
-          <h2 className="mt-8 max-w-4xl font-serif text-[2.75rem] leading-[1.02] font-normal tracking-tight sm:text-7xl lg:text-[5.5rem]">
-            Design que se sente antes de ser visto.
-          </h2>
-        </div>
-
-        <figure className="mx-auto mt-14 max-w-7xl">
-          <img
-            src={aboutTatil}
-            alt="Mãos tocando uma superfície em Braille em fotografia em preto e branco"
-            width={1600}
-            height={1000}
-            loading="lazy"
-            className="mono-photo w-full rounded-2xl object-cover aspect-[16/10] sm:aspect-[21/9]"
-          />
-          <figcaption className="mt-5 eyebrow text-muted-foreground">
-            A leitura do toque — estudo Tátil nº 02
-          </figcaption>
-        </figure>
-
-        <div className="mx-auto mt-16 grid max-w-6xl gap-12 lg:grid-cols-12 lg:gap-16">
-          <div className="lg:col-span-7">
-            <p className="text-[1.05rem] leading-[1.9] font-light text-foreground/90">
-              A Tátil nasceu da crença de que acessibilidade e beleza devem caminhar juntas. Criada
-              por um time de designers, educadores e especialistas em inclusão, a marca traduz
-              necessidades reais do dia a dia em objetos sensoriais refinados — onde cada relevo,
-              cada textura e cada sinalização é pensado para ampliar autonomia, segurança e dignidade.
-            </p>
-            <p className="mt-6 text-[0.98rem] leading-[1.95] font-light text-muted-foreground">
-              Nosso trabalho vai além da adaptação: reimaginamos como pessoas com deficiência visual
-              experimentam o mundo. Dos jogos educativos à sinalização de ambientes, cada peça é
-              desenvolvida com precisão técnica, materiais de alta qualidade e um olhar estético que
-              eleva o cotidiano.
-            </p>
-          </div>
-
-          <div className="lg:col-span-5">
-            <div className="h-px w-full hairline lg:hidden" />
-            <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-1 lg:gap-10">
-              <div>
-                <h3 className="font-serif text-2xl font-normal tracking-tight">Missão</h3>
-                <p className="mt-3 text-sm leading-[1.85] font-light text-muted-foreground">
-                  Democratizar o acesso a produtos e soluções táteis de alto padrão, promovendo
-                  independência e participação plena em todos os espaços.
-                </p>
-              </div>
-              <div>
-                <h3 className="font-serif text-2xl font-normal tracking-tight">Valores</h3>
-                <p className="mt-3 text-sm leading-[1.85] font-light text-muted-foreground">
-                  Empatia, precisão, inclusão e design atemporal. Criamos com respeito às diferenças
-                  e com a ambição de tornar a acessibilidade invisível no sentido mais elegante.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="mx-auto mt-20 max-w-6xl">
-          <div className="h-px w-full hairline" />
-          <div className="mt-12 grid gap-10 sm:grid-cols-3">
-            <div>
-              <p className="font-serif text-5xl font-normal tracking-tight text-silver-metal">+12k</p>
-              <p className="mt-3 eyebrow text-muted-foreground">Produtos entregues</p>
-            </div>
-            <div>
-              <p className="font-serif text-5xl font-normal tracking-tight text-silver-metal">350+</p>
-              <p className="mt-3 eyebrow text-muted-foreground">Instituições atendidas</p>
-            </div>
-            <div>
-              <p className="font-serif text-5xl font-normal tracking-tight text-silver-metal">15</p>
-              <p className="mt-3 eyebrow text-muted-foreground">Estados presentes</p>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* ── Nova Seção 1 — Essência / Introdução ──────────────── */}
       <section id="sobre" className="bg-background px-6 py-28 sm:py-40">
