@@ -7,7 +7,6 @@ import pBola from "@/assets/p-bola.jpg";
 import pLapis from "@/assets/p-lapis.jpg";
 import pAlfabeto from "@/assets/p-alfabeto.jpg";
 import pFormas from "@/assets/p-formas.jpg";
-import { EducationalSection } from "@/components/EducationalSection";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -257,8 +256,6 @@ function Index() {
           </p>
         </div>
       </section>
-
-      <EducationalSection />
 
       {/* ── Nova Seção 2 — Coleção Sensorial ──────────────────── */}
       <section id="kit" className="bg-onyx-soft/40 px-6 pb-32 pt-24 sm:pb-40 sm:pt-32">
